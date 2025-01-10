@@ -1,0 +1,12 @@
+{
+    "name": "jeeves_place",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": {
+        "name": "Leandro Schultze"
+    },
+    "scripts": {
+        "start": "node server/app.js"
+    },
+    "license": "MIT"
+}
