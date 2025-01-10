@@ -1,17 +1,19 @@
 {
-    "name": "jeeves_place",
-    "version": "1.0.0",
-    "main": "index.js",
-    "author": {
-        "name": "Leandro Schultze"
-    },
-    "scripts": {
-        "start": "node server/app.js",
-        "lint": "eslint ."
-    },
-    "license": "MIT",
-    "devDependencies": {
-        "eslint": "^9.17.0",
-        "globals": "^15.14.0"
-    }
+	"name": "jeeves_place",
+	"version": "1.0.0",
+	"main": "index.js",
+	"author": {
+		"name": "Leandro Schultze"
+	},
+	"scripts": {
+		"start": "node server/app.js",
+		"lint": "eslint server",
+		"format": "prettier --write server"
+	},
+	"license": "MIT",
+	"devDependencies": {
+		"eslint": "^9.17.0",
+		"globals": "^15.14.0",
+		"prettier": "^3.4.2"
+	}
 }
