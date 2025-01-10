@@ -1,0 +1,31 @@
+version: "1.0"
+
+services:
+    postgres:
+        image: postgres
+        restart: always
+        environment:
+            - POSTGRES_USER=jeevesplace
+            - POSTGRES_ROOT_PASSWORD=MegaSecret1234
+            - POSTGRES_PASSWORD=MegaSecret1234
+            - POSTGRES_DATABASE=jeevesplace
+        ports:
+            - "5432:5432"
+
+    phppgmyadmin:
+        image: dpage/pgadmin4
+        depends_on:
+            - postgres
+        restart: always
+        environment:
+            - PGADMIN_DEFAULT_EMAIL=schultze_jeevesplace@gmail.com
+            - PGADMIN_DEFAULT_PASSWORD=MegaSecret1234
+            - PGHOST=postgres
+            - PGPORT=5432
+            - PGUSER=jeevesplace
+            - PGPASSWORD=MegaSecret1234
+        ports:
+            - "9200:80"
+
+volumes:
+    jeevesplace_posgres:
