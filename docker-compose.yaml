@@ -6,9 +6,8 @@ services:
         restart: always
         environment:
             - POSTGRES_USER=jeevesplace
-            - POSTGRES_ROOT_PASSWORD=MegaSecret1234
             - POSTGRES_PASSWORD=MegaSecret1234
-            - POSTGRES_DATABASE=jeevesplace
+            - POSTGRES_DB=jeevesplace
         ports:
             - "5432:5432"
 
