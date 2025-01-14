@@ -1,6 +1,20 @@
 # Template JeevesPlace Leandro Schultze
 
-## Start up
+## Getting started
+
+1. Install all packages: "npm install"
+2. Start the docker container for the database: "docker-compose up"
+3. Use "npm run start" to start the application
+4. The Website should now run on localhost:3000
+
+# Commands
+
+There are several commands in this project
+
+- npm run start: This starts the application
+- npm run lint: This runs the linter for the application
+- npm run format: This runs the formatter of the application
+- npm run test: With this you can start the tests
 
 ## pgAdmin
 
