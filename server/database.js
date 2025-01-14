@@ -20,6 +20,7 @@ const initializeDatabase = async () => {
 		await client.connect();
 		await queryDB(client, createTablesQuery); // Create tables
 		console.log("Connected to PostgreSQL database");
+
 		return client;
 	} catch (error) {
 		console.error("Error connecting to PostgreSQL database", error);

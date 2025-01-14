@@ -8,7 +8,8 @@
 	"scripts": {
 		"start": "node server/app.js",
 		"lint": "eslint server",
-		"format": "prettier --write server"
+		"format": "prettier --write server",
+		"test": "jest"
 	},
 	"license": "MIT",
 	"devDependencies": {
@@ -20,6 +21,7 @@
 	"dependencies": {
 		"dotenv": "^16.4.7",
 		"express": "^4.21.2",
+		"jest": "^29.7.0",
 		"pg": "^8.13.1"
 	}
 }
